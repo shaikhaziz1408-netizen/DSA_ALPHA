@@ -8,4 +8,16 @@ for i in range(len(nums)):
             print(nums[i],nums[j])
 
 
+# leetcode two_sum solution
+class Solution:
+    def twoSum(self, nums, target):
+        seen = {}
+
+        for i in range(len(nums)):
+            need = target - nums[i]
+
+            if need in seen:
+                return [seen[need], i]
+
+            seen[nums[i]] = i
 
