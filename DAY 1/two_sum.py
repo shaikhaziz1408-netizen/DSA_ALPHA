@@ -21,3 +21,4 @@ class Solution:
 
             seen[nums[i]] = i
 
+# Two Sum solution
