@@ -1,0 +1,15 @@
+nums = [1, 2, 3, 4, 5]
+
+n = len(nums)
+
+# Store the last element
+last = nums[n - 1]
+
+# Shift elements to the right
+for i in range(n - 1, 0, -1):
+    nums[i] = nums[i - 1]
+
+# Put the last element at the beginning
+nums[0] = last
+
+print(nums)
