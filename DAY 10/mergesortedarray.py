@@ -1,4 +1,4 @@
-# Setup inputs
+# 
 nums1 = [1, 2, 3, 0, 0, 0]
 m = 3
 nums2 = [2, 5, 6]
@@ -18,4 +18,4 @@ while j >= 0:
         j -= 1
     k -= 1
 
-print(nums1)  # Output: [1, 2, 2, 3, 5, 6]
+print(nums1)  

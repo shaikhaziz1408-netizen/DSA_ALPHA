@@ -1,0 +1,19 @@
+# Maximum sum of subarray of size k
+nums = [2, 1, 5, 1, 3, 2]
+k = 3
+
+window_sum = 0
+
+for i in range(k):
+    window_sum = window_sum + nums[i]    
+
+max_sum = window_sum
+
+for i in range(k, len(nums)):
+    window_sum = window_sum - nums[i - k]
+    window_sum = window_sum + nums[i]
+
+    if window_sum > max_sum:
+        max_sum = window_sum
+
+print(max_sum)
